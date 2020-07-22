@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "Google Meet Auto Mute",
+  "version": "1.0.1",
+  "description": "Control the mute function of Google Meet automatically with image recognition and voice recognition.",
+  "icons":  {
+    "128": "images/icon128.png",
+    "48": "images/icon48.png",
+    "32": "images/icon32.png",
+    "16": "images/icon16.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "https://meet.google.com/",
+    "storage",
+    "tabs"
+  ],
+  "web_accessible_resources": [
+    "models/tiny_face_detector_model-shard1",
+    "models/face_landmark_68_tiny_model-shard1",
+    "models/tiny_face_detector_model-weights_manifest.json",
+    "models/face_landmark_68_tiny_model-weights_manifest.json",
+    "auto_mute.html"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "auto-mute setting",
+    "default_icon": {
+      "16": "images/auto_off16.png",
+      "32": "images/auto_off32.png"
+    }
+  }
+}
