@@ -9,6 +9,9 @@
 <img src="readme_images/AutoMute.PNG" width=80%>
 </div>
 
+* [このソフトウェアに関する記事](https://techblog.morphoinc.com/entry/2020/08/03/100007)
+* [Chrome ウェブストア](https://chrome.google.com/webstore/detail/google-meet-auto-mute/hbjmnnfhadeedfpchjhofclcdohnbfhe)
+
 ## 動作環境
 Google Chrome
 * 動作確認済みバージョン: Chrome 83

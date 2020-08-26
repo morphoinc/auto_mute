@@ -9,6 +9,9 @@ A Chrome extension which controls the mute function of [Google Meet](https://mee
 <img src="readme_images/AutoMute.PNG" width=80%>
 </div>
 
+* [Article about this software](https://techblog.morphoinc.com/entry/2020/08/03/100007)
+* [Chrome Web Store](https://chrome.google.com/webstore/detail/google-meet-auto-mute/hbjmnnfhadeedfpchjhofclcdohnbfhe)
+
 ## System requirement
 Google Chrome 
 * tested version: Chrome 83
